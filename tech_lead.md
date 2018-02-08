@@ -15,10 +15,10 @@ _LAST UPDATED: February 7, 2018_
     - [Working with Other Departments](#working-with-other-departments)
     - [Tracking Tasks](#tracking-tasks)
       - [Master Tracking Issue (MTI)](#master-tracking-issue-mti)
+        - [Tasks](#tasks)
+        - [This is tough](#this-is-tough)
       - [Displaying Progress in the MTI](#displaying-progress-in-the-mti)
-        - [Legend](#legend)
-        - [Milestones](#milestones)
-      - [Milestones](#milestones-1)
+      - [Milestones (a.k.a. Deliverables)](#milestones-aka-deliverables)
       - [Types of Milestones](#types-of-milestones)
       - [Task toward unknowns](#task-toward-unknowns)
     - [Meetings](#meetings)
@@ -195,13 +195,13 @@ windows (See: [Task toward unknowns](#task-toward-unknowns))
 
 At the onset of a project, or at the onset of a project's continuing milestones,
 the Tech Lead must take time to thoroughly review the project's specifications
-and do their best to break down the specification into trackable tasks with a scope of **1-5 days** of work (outside Code Review / QA), and an optimal timeline of **3 days**. These tasks should then be grouped into Milestones. Each Milestone receives a deadline date. (See: [Milestones](#milestones-1))
+and do their best to break down the specification into trackable tasks with a scope of **1-5 days** of work (outside Code Review / QA), and an optimal timeline of **3 days**. These tasks should then be grouped into Milestones. Each Milestone is a _deliverable_ with a deadline date. (See: [Milestones](#milestones-aka-deliverables))
 
 > **Pro Tip**: Consider enlisting your team to help you break down Milestones into tasks. This is sometimes the _only_ option if you've got a team member with domain knowledge you don't possess. Delegate where it makes sense, but be sure to _review_ all tasks and to _validate_ their scope and/or assumptions. 
 
 Webflow's current practice is to create GitHub issues for every task that are then tracked in a "Master Tracking Issue". The MTI should receive a `[Master Tracking Issue]` label in the issue's title as well as in GitHub's label section.
 
-The MTI is a centralized and clearly outlined view of GitHub issues that lists Milestones, their projected delivery date (See: [Milestones](#milestones-1)), and their related issues in a list that
+The MTI is a centralized and clearly outlined view of GitHub issues that lists Milestones, their projected delivery date (See: [Milestones](#milestones-aka-deliverables)), and their related tasks in a list that
 
 1. Can be easily assigned to your team members who will then be responsible for opening a PR to close the issue
 2. Displays the task's GitHub issue number _and_ the PR that will close the
@@ -209,16 +209,55 @@ The MTI is a centralized and clearly outlined view of GitHub issues that lists M
 3. Provides the estimated finish date for each milestone, and the status of each
    issue toward those milestones (See: [Displaying Progress in the MTI](#displaying-progress-in-the-mti))
 
+###### Tasks
+
 Each issue (or **1-5 day** task) must clearly point to the portion of the specification the
 issue addresses _and_ to the concerned areas of Webflow's codebase (if they
-exist). We've found it
-is best for each task to
+exist). We've found it is best for each task to
 
 1. Clearly point to the original specification the issue addresses, with any
    _visual_ content that will help an engineer complete the task, including
    screenshots/screencasts from the specification or from Webflow itself
 2. List a best guess of TODOs to help the engineer build a mental model around
    the problems they must solve
+
+Below is a task template. This should be located in a GitHub issue and should receive the same title that is tracked in the MTI. 
+
+Start of task template
+---
+Master Tracking Issue: #00000 (Place the Github link here)
+
+### Objective
+
+List the goal of the tasks here. It does not need to be long, and can take the form of a user story, e.g. "As a user, I would like to X, so that I can X", or "As a user, I would like to be able to right-click and delete an item, so that I don't have to move my mouse all the way up to the top of the screen."
+
+### Tech Spec
+
+<Insert screenshots/wireframe/visual content of finished feature>
+
+_Clearly_ outline the expectations for the tasks here. Place them in the form of TODOs. For example:
+
+- [ ] Include a "Delete" option in the right-click menu for item 
+- [ ] Wire the "Delete" option to the DELETE_TEM system event 
+  - [ ] Write unit test for delete operation
+  - [ ] User may _not_ delete item if multiple items are selected
+
+Also add condition material, if needed:
+
+- [ ] When the user is logged into a free account, disallow deletion
+
+### Design Artifacts
+
+Provide a list of design artifacts on which the above tech spec is based. This could be an external link to an artifact the Design or UX team provided. Include authors names so that the task owner can reach out.
+
+### Notes
+
+Any clarifying content unrelated to the above items (Or, just a word of encouragement, like "You're doing great!")
+
+---
+**END OF GITHUB ISSUE**
+
+###### This is tough
 
 Creating the Master Tracking Issue will feel like it's taking too much time and
 will make you question whether or not you are performing the most effective
@@ -240,7 +279,7 @@ You can think of the MTI as a dashboard that displays the progress of every issu
 
 ------
 
-###### Legend
+### Legend
 
 ⬜️ - Hasn't started<br/>
 📝 - In Progress<br/>
@@ -248,7 +287,7 @@ You can think of the MTI as a dashboard that displays the progress of every issu
 🚫 - Blocked<br/>
 ✅ - Complete (merged into `dev`)<br/>
 
-###### Milestones
+### Milestones
 
 🏁 - BETA :: September 15, 2017<br/>
 🚀 - LAUNCH :: November 1, 2017<br/>
@@ -280,7 +319,7 @@ It is up to the Tech Lead to maintain the status of the above MTI, though they m
 
 > **Pro Tip:** If a single MTI grows too long and too unwieldy, it's fine to split them into separate MTIs.
 
-##### Milestones
+##### Milestones (a.k.a. Deliverables)
 
 The Tech Lead must keep their Product Manager (or Engineering Manager if no Product Manager is assigned) updated on how well they are tracking against Milestones, as well as provide weekly All Hands updates (See: [How do I provide status reports to All Hands and Lattice?](#how-do-i-provide-status-reports-to-all-hands-and-lattice)). These Milestones and their respective tasks are determined by the Tech Lead and confirmed by a Product Manager, Engineering Manager, or otherwise. 
 
