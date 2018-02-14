@@ -223,39 +223,34 @@ exist). We've found it is best for each task to
 
 Below is a task template. This should be located in a GitHub issue and should receive the same title that is tracked in the MTI. 
 
-Start of task template
----
-Master Tracking Issue: #00000 (Place the Github link here)
-
-### Objective
-
-List the goal of the tasks here. It does not need to be long, and can take the form of a user story, e.g. "As a user, I would like to X, so that I can X", or "As a user, I would like to be able to right-click and delete an item, so that I don't have to move my mouse all the way up to the top of the screen."
-
-### Tech Spec
-
-<Insert screenshots/wireframe/visual content of finished feature>
-
-_Clearly_ outline the expectations for the tasks here. Place them in the form of TODOs. For example:
-
-- [ ] Include a "Delete" option in the right-click menu for item 
-- [ ] Wire the "Delete" option to the DELETE_TEM system event 
-  - [ ] Write unit test for delete operation
-  - [ ] User may _not_ delete item if multiple items are selected
-
-Also add condition material, if needed:
-
-- [ ] When the user is logged into a free account, disallow deletion
-
-### Design Artifacts
-
-Provide a list of design artifacts on which the above tech spec is based. This could be an external link to an artifact the Design or UX team provided. Include authors names so that the task owner can reach out.
-
-### Notes
-
-Any clarifying content unrelated to the above items (Or, just a word of encouragement, like "You're doing great!")
-
----
-**END OF GITHUB ISSUE**
+> Master Tracking Issue: #00000 (Place the Github link here)
+> 
+> ### Objective
+> 
+> List the goal of the tasks here. It does not need to be long, and can take the form of a user story, e.g. "As a user, I would like to X, so that I can X", or "As a user, I would like to be able to right-click and delete an item, so that I don't have to move my mouse all the way up to the top of the screen."
+> 
+> ### Tech Spec
+> 
+> <Insert screenshots/wireframe/visual content of finished feature>
+> 
+> _Clearly_ outline the expectations for the tasks here. Place them in the form of TODOs. For example:
+> 
+> - [ ] Include a "Delete" option in the right-click menu for item 
+> - [ ] Wire the "Delete" option to the DELETE_TEM system event 
+>   - [ ] Write unit test for delete operation
+>   - [ ] User may _not_ delete item if multiple items are selected
+> 
+> Also add condition material, if needed:
+> 
+> - [ ] When the user is logged into a free account, disallow deletion
+> 
+> ### Design Artifacts
+> 
+> Provide a list of design artifacts on which the above tech spec is based. This could be an external link to an artifact the Design or UX team provided. Include authors names so that the task owner can reach out.
+> 
+> ### Notes
+> 
+> Any clarifying content unrelated to the above items (Or, just a word of encouragement, like "You're doing great!")
 
 ###### This is tough
 
@@ -275,32 +270,28 @@ meaningful progress (See: [How do I keep my team motivated?](#how-do-i-keep-my-t
 
 ##### Displaying Progress in the MTI
 
-You can think of the MTI as a dashboard that displays the progress of every issue associated with a milestone. This, in turn, shows the status of _entire_ milestones, and subsequently, the _entire_ deliverable. For instance, here's an example of how an MTI might progress: 
+You can think of the MTI as a dashboard that displays the progress of every issue associated with a  milestone. This, in turn, shows the status of _entire_ milestones, and subsequently, the _entire_ deliverable. For instance, here's an example of how an MTI might progress: 
 
-------
-
-### Legend
-
-⬜️ - Hasn't started<br/>
-📝 - In Progress<br/>
-🔄 - Code Review / QA<br/> 
-🚫 - Blocked<br/>
-✅ - Complete (merged into `dev`)<br/>
-
-### Milestones
-
-🏁 - BETA :: September 15, 2017<br/>
-🚀 - LAUNCH :: November 1, 2017<br/>
-
-| Milestone | Issue  |   PR   | Description                              | Progress |
-| :-------: | :----: | :----: | :--------------------------------------- | :------: |
-|    🏁     | #12650 | #12666 | Empty Interactions Panel UI Refactor     |    ✅     |
-|    🏁     | #12675 | #12685 | AnimationList Component                  |    🔄    |
-|    🏁     | #12655 | #12746 | Convert ActionListConfig to InteractionStep |    📝    |
-|    🚀     | #12653 | #12784 | Create InteractionConfiguration Component |    🚫    |
-|    🚀     | #12686 |  ???   | Create all Timed InteractionConfiguration items: Mouse Tap, Mouse Hover, Scroll Into View, Page Load, Page Scrolled |    ⬜️    |
-
-------
+> ### Legend
+>
+> ⬜️ - Hasn't started<br/>
+> 📝 - In Progress<br/>
+> 🔄 - Code Review / QA<br/> 
+> 🚫 - Blocked<br/>
+> ✅ - Complete (merged into `dev`)<br/>
+> 
+> ### Milestones
+> 
+> 🏁 - BETA :: September 15, 2017<br/>
+> 🚀 - LAUNCH :: November 1, 2017<br/>
+> 
+> | Milestone | Issue  |   PR   | Description                              | Progress |
+> | :-------: | :----: | :----: | :--------------------------------------- | :------: |
+> |    🏁     | #12650 | #12666 | Empty Interactions Panel UI Refactor     |    ✅     |
+> |    🏁     | #12675 | #12685 | AnimationList Component                  |    🔄    |
+> |    🏁     | #12655 | #12746 | Convert ActionListConfig to InteractionStep |    📝    |
+> |    🚀     | #12653 | #12784 | Create InteractionConfiguration Component |    🚫    |
+> |    🚀     | #12686 |  ???   | Create all Timed InteractionConfiguration items: Mouse Tap, Mouse Hover, Scroll Into View, Page Load, Page Scrolled |    ⬜️    |
 
 The above gives a PM (or, anyone concerned) a quick way to gauge the progress of a project. For instance, one can see the BETA milestone is about 75% complete, and since tasks are broken into roughly **1-5 day** increments, it is easy to tell if a milestone is going `off-track` (See: [Help! We are behind schedule!](#help-we-are-behind-schedule)). 
 
