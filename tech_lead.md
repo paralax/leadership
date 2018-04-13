@@ -722,7 +722,7 @@ project to the Webflow Project Tracker Google document _prior_ to this
 meeting. This document is shared in the #all-hands channel in Slack. A template for the updates is located at the end of the Google document. Please follow it accordingly. The items in the template are
 
 1. TDLR, or a brief blurb on the project's state of affairs.
-1. MILESTONE ON-TRACK/OFF-TRACK, where you provide the track updates for each active milestone, their percent progess, and the percent change from the previous week (these are guesstimates). Also list out the next two weeks of tasks the team will work on and their expected delivery dates. 
+1. MILESTONE ON-TRACK/OFF-TRACK, where you provide the track updates for each active milestone, their percent progress, and the percent change from the previous week (these are guesstimates). Also list out the next two weeks of tasks the team will work on and their expected delivery dates. 
 1. KEY DECISIONS, where you mention any big key decisions that lead to timeline changes, scope changes, and anything that relates to support/marketing, or change in resources.
 1. RISKS, UNKNOWNS, AND BLOCKERS, where you mention any risks, unknowns, or blockers that appeared since the last week. 
 
