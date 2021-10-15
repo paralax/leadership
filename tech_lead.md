@@ -674,8 +674,8 @@ ShortcutHelper.
 ## How can I stay "centered"?
 
 Staying "centered" means you take care of yourself first and foremost and find a
-"happy" place from which to approach solving problems. Life is about performing
-as much meaningful work as it is about performing meaningful _human activities_.
+"happy" place from which to approach solving problems. Life is as much about
+performing meaningful work as it is about performing meaningful _human activities_.
 This means you will need to take a break from your daily tasks and engage in
 activities that keep you fresh and focused. Does reading a book help you? Does
 binge-watching some Netflix? Does exercise? Fresh air? Find a routine that keeps
